@@ -199,7 +199,7 @@ body {
 }
 
 .work:hover{
-  animation: worklogobounce 0.6s ease-out 0.1s;
+  animation: worklogobounce 0.6s ease-out 0.2s;
   transform-origin: center bottom;
 }
 
@@ -289,6 +289,7 @@ body {
     transform: translateY(0);
   }
 } 
+
 
 
 
