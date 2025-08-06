@@ -1,0 +1,293 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F5F5DC;
+  font-family: sans-serif;
+}
+.forall {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.image{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.title{
+  text-transform: uppercase;
+  position: absolute;
+  font-size: 11vw;
+  left: 21vw;
+  text-align: center;
+  top: 0.2vw;
+  color: #5D4037;
+  line-height: 20vh;
+}
+.work{
+  font-family: cursive;
+  position: absolute;
+  color: beige;
+  bottom: 16.7vw;
+  font-size: 3.2vw;
+  left: 15.5vw;
+  z-index: 3;
+  text-decoration: none;
+  text-transform: uppercase;
+
+}
+.item{
+  position: absolute;
+  max-width: 20vw;
+  height: auto;
+}
+.desk{
+  position: absolute;
+    bottom: 1vw;  
+    z-index: 1;
+    left: 10vw;
+    width: 100vw;
+}
+.monitor{
+  position: absolute;
+  z-index: 2;
+  width: 18vw;
+  bottom: 11vw;
+  left: 11vw;
+}
+.shelf{
+  position: absolute;
+  width: 5vw;
+  bottom: 17vw;
+  left: 8vw;
+  z-index: 3;
+}
+.wallshelf{
+  position: absolute;
+  width: 22vw;
+  right: 1vw;
+  
+}
+
+.github{
+  position: absolute;
+  width: 3vw;
+  right:16vw ;
+  top: 9.1vw;
+}
+.linkedin{
+  position: absolute;
+  width: 3vw;
+  right:12.6vw ;
+  top: 9.1vw;
+}
+.youtube{
+  position: absolute;
+  width: 5vw;
+  right:8vw ;
+  top: 8.5vw;
+}
+.newdesk{
+  position: absolute;
+  width: 21vw;
+  bottom: 4.5vw;
+  right: 6vw;
+}
+
+.speaker{
+  position: absolute;
+  width: 10vw;
+  bottom: 12.1vw;
+  right: 14.6vw;
+}
+
+.flowerpot{
+  position: absolute;
+  width: 10vw;
+  bottom: 13.5vw;
+  right: 8vw;
+}
+
+.note1{
+  width: 3vw;
+  position: absolute;
+  top: 20vw;
+  left: 11vw;
+}
+.htmllogo{
+  position: absolute;
+  width: 1.5vw;
+  top: 20.8vw;
+  left: 11.8vw;
+}
+.note2{
+  width: 3vw;
+  position: absolute;
+  top: 20vw;
+  left: 15vw;
+}
+.csslogo{
+  position: absolute;
+  width: 1.5vw;
+  top: 20.8vw;
+  left: 15.8vw;
+}
+.note3{
+  width: 3vw;
+  position: absolute;
+  top: 20vw;
+  left: 18.8vw;
+}
+.jslogo{
+   position: absolute;
+  width: 1.3vw;
+  top: 20.8vw;
+  left: 19.7vw;
+}
+.character{
+  width: 18vw;
+  position: absolute;
+  bottom: 0.1vw;
+  left: 42vw; 
+}
+.frame{
+  position: absolute;
+  width: 6.5vw;
+  right: 5vw;
+  top: 37vh;
+}
+
+.frame1{
+  height: 10vw;
+  position:absolute;
+  left: 10vw;
+  top: 5vw;
+}
+.profile{
+  position: absolute;
+  width: 4vw;
+  left: 13vw;
+  top: 9.3vw;
+}
+
+/* transition and animation */
+
+
+.github:hover{
+  transition: none 2s ease-in-out 0s;
+  transform: translateY(-8px)
+  scale(1.2);
+}
+
+.linkedin:hover{
+  transition: none 2s ease-in-out 0s;
+  transform: translateY(-8px);
+}
+
+.youtube:hover{
+  transition: none 2s ease-in-out 0s;
+  transform: translateY(-8px)
+  scale(1.2);
+}
+
+.profile:hover{
+  transition: none 2s ease-in 0s;
+  transform: scale(1.3)
+  translateY(-10px);
+  
+}
+
+.work:hover{
+  animation: worklogobounce 0.6s ease-out;
+  transform-origin: center bottom;
+}
+
+@keyframes worklogobounce {
+  0% {
+    transform: scale(0.8)
+    translateY(30px);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.1)
+    translateY(-10px);
+    opacity: 1;
+  }
+  75% {
+    transform: scale(0.95)
+    translateY(5px);
+  }
+  100% {
+    transform: scale(1)
+    translateY(0);
+  }
+
+}
+  
+.frame:hover{
+  transition: none 2s ease-in 0s;
+  transform: scale(1.2);
+}
+
+.flowerpot:hover{
+  animation: flowerbounce 0.65s ease-out 0.1s;
+  transform-origin:center ;
+}
+
+@keyframes flowerbounce {
+  0%{
+    transform: translateY(0px);
+    
+  }
+  50%{
+    transform: translateY(-18px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+
+}
+
+.speaker:hover{
+  animation: vibrate 1s ease-in 0.1s alternate ;
+  transform-origin: center;
+}
+
+@keyframes vibrate { 
+  0%{
+    transform: translate(0)
+               translateY(-10px);
+    
+  }
+  50%{
+    transform: translateX(-10px) 
+               translateY(-5px);
+  }
+  75%{
+    transform: translateX(10px)
+               translateY(-5px);
+  }
+  100%{
+    transform: translate(0);
+  }
+}
+
+ .character:hover{
+  animation: popupcharacter 1s ease-out 0.1s;
+}
+
+@keyframes popupcharacter {
+  0%{
+    transform: translateY(50px);
+  }
+   50%{
+    transform: translateX(-10px) 
+               translateY(-5px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+} 
+
+
